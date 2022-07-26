@@ -1,0 +1,358 @@
+*{
+    box-sizing: border-box;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+body{
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+}
+
+h2{
+    color: rgb(49, 49, 49);
+    }
+
+h3{
+    color: rgb(49, 49, 49);
+}
+
+h1{ font-size: 3.5em;}
+h2{ font-size: 2.7em;}
+h3{ font-size: 2em;}
+p{ font-size: 1.25em;}
+ul{ list-style: none;}
+li{ font-size: 1.25em;}
+
+button{
+    font-size: 1.25em;
+    font-weight: bold;
+    padding: 10px 30px;
+    border-radius: 5px;
+    border: 2px solid rgba(0,0,0,0.3);
+    color: white;
+    background-color: rgb(4, 128, 150);
+}
+
+button:hover{
+    background-color: rgb(3, 162, 190);
+}
+
+.container{
+    max-width: 1920px;
+    margin: auto;
+    box-shadow: 0 0 5px rgba(19, 20, 19, 0.158);
+}
+
+.container2{
+    max-width: 1920px;
+    margin: auto;
+}
+
+.color-acento{ color:rgb(4, 128, 150); }
+
+header{
+    background-color: rgb(245,245,245);
+    
+}
+
+header .logo{
+    background-image: url("img/Logo-Ignacio-Barriga-remove.PNG");
+        background-size: cover;
+        background-position: center center;
+        height: 112px;
+        width: 177px; 
+}
+
+header .container{
+    padding-left: 300px;
+    padding-right: 200px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+header nav{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    padding-bottom: 25px;
+}
+
+header a{
+    padding: 5px 12px;
+    text-decoration: none;
+    font-weight: bold;
+    color: black;
+}
+
+header a:hover{
+    color: rgb(4, 128, 150);
+}
+
+a{
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+}
+
+#hero{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    height: 100vh;
+}
+
+#hero h1{
+    color: rgb(49, 49, 49);
+    text-align: initial;
+    margin-left: 300px;
+    margin-top: 0px;
+    margin-bottom: 10px;
+}
+
+#hero p{
+    color: rgb(49, 49, 49);
+    padding: 0px 0px;
+    text-align: left;
+    margin-top: 200px;
+    margin-left: 1000px;
+    margin-right: 100px;
+}
+
+#hero button{
+    font-size: 1em;
+    margin-right: 1400px;
+    margin-left: 340px;
+    margin-top: 0px;
+    border-radius: 30px;
+}
+#hero .imagen-inicio{
+        background-image: url("img/inicio-img.png");
+        height: 500px;
+        width: 500px; 
+        margin-left: 1200px;
+        margin-top: -700px;
+        margin-bottom: -100px;
+    }
+
+#tecnologias{
+    background-color: rgb(204, 204, 204);
+    color: white;
+    text-align: center;
+}
+
+#tecnologias .container2{
+    padding: 200px 12px;
+}
+
+#tecnologias h2{
+    margin-top: 0;
+    font-size: 3.2em;
+}
+
+#tecnologias .carta{
+    background-position: center center;
+    background-size: cover;
+    padding: 50px 0px;
+    margin: 70px 30px;
+    border-radius: 15px;
+}
+
+#tecnologias .fotos{
+    background-image:url("logos/Microsoft-Visual-Studio-logo.png");
+    height: 180px;
+    width: 440px;
+}
+
+#tecnologias .fotos2{
+    background-image:url("logos/linux-logo.png");
+    height: 180px;
+    width: 440px;
+}
+
+#mis-proyectos{
+    background-color: rgb(204, 204, 204);
+    color: rgb(204, 204, 204);
+    text-align: center;
+}
+
+#mis-proyectos .container2{
+    padding: 200px 12px;
+}
+
+#mis-proyectos .carta{
+    background-position: center center;
+    background-size: cover;
+    padding: 50px 0px;
+    margin: 9px;
+    border-radius: 15px;
+}
+
+#mis-proyectos .ejemplos-proyectos{
+    background-image:url("proyectos/DragonballZ.PNG");
+    height: 905px;
+    width: 1280px;
+}
+
+#contactos button{
+    font-size: 5vw;
+}
+footer{
+    background-color: rgb(24, 24, 24);
+}
+
+footer{
+    background-color: rgb(24, 24, 24);
+}
+
+footer p{
+    margin: 0;
+    padding: 12px;
+    color: white;
+}
+
+footer .container{
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+}
+
+@media (min-width: 850px){
+    header{
+        position: fixed;
+        width: 100%;
+    }
+
+    header .container{
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    header nav{
+        flex-direction: row;
+        padding-bottom: 0;
+        padding-right: 20px;
+    }
+
+    #tecnologias .programas{
+        display: flex;
+        justify-content: center;
+    }
+
+    #tecnologias h2{
+        font-size: 4em;
+        color: rgb(49, 49, 49);
+    }
+
+
+    #tecnologias .carta{
+        padding: 70px 80px;
+        background-size: 100% 150px;
+        background-repeat: no-repeat;
+        background-position-y: 0;
+        background-color: rgb(243, 240, 240);
+        box-shadow: 2px 2px 10px rgba(0,0,0,0.5);
+    }
+
+    #mis-proyectos .programas{
+        display: flex;
+        justify-content: center;
+    }
+
+    #mis-proyectos h2{
+        font-size: 4em;
+        margin-top: 100px;
+    }
+
+    #mis-proyectos .carta{
+        padding: 50px 45px;
+        background-size: 100% 150px;
+        background-repeat: no-repeat;
+        background-position-y: 0;
+        background-color: rgb(243, 240, 240);
+        box-shadow: 2px 2px 10px rgba(0,0,0,0.5);
+    }
+
+    #contactos .container2{
+        text-align: initial;
+    }
+
+    #contactos table{
+        margin-left: 800px;
+        margin-top: -210px;
+        text-align: left;
+    }
+
+    #contactos p{
+        margin-left: 1400px;
+        margin-top: -140px;
+        text-align: left;
+        color: black;
+        font-size: 1em;
+        
+    }
+
+    #contactos a{
+        text-decoration: none;
+        color: rgb(0, 0, 0);
+    }
+
+    #contactos textarea{
+        margin-left: 700px;
+        margin-top: 5px;
+        text-align: left;
+    }
+    #contactos input{
+        margin-left: 700px;
+        margin-top: 5px;
+        text-align: left;
+    }
+
+    #contactos h3{
+        font-size: 3em;
+        text-align: center;
+        margin-bottom: 100px;
+        color: white;
+
+    }
+
+    #contactos button{
+        font-size: 2em;
+        margin-left: 1060px;
+        margin-top: 10px;
+        max-width: 300px;
+        max-height: 40px;
+        color: rgb(255, 255, 255);
+    }
+    #contactos h4{
+        font-size: 0.50em;
+        margin-left: -5px;
+        margin-top: 0px;
+    }
+
+    footer .container2{
+        justify-content: flex-end;
+        margin-top: 0px;
+    }
+
+    #contactos{
+        background-image: url("img/imagen-final.png");
+        height: 500px;
+        width: 1903px; 
+}
+
+@media (min-width: 1200px) {
+    #mis-proyectos{
+        background-position-x: calc(100vw - 800px);
+    }
+}
+
+    @media (min-width: 1200px) {
+        #contactos{
+            background-position-x: calc(100vw - 800px);
+        }
+    }
+}
