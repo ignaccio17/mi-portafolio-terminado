@@ -42,6 +42,7 @@ button:hover{
 
 .container{
     max-width: 1920px;
+    max-height: 80px;
     margin: auto;
     box-shadow: 0 0 5px rgba(19, 20, 19, 0.158);
 }
@@ -54,7 +55,7 @@ button:hover{
 .color-acento{ color:rgb(4, 128, 150); }
 
 header{
-    background-color: rgb(245,245,245);
+    background-color: rgba(255, 255, 255, 0.589);
     
 }
 
@@ -104,11 +105,11 @@ a{
     height: 100vh;
 }
 
-#hero h1{
+#hero .Title{
     color: rgb(49, 49, 49);
     text-align: initial;
     margin-left: 300px;
-    margin-top: 0px;
+    margin-top: 100px;
     margin-bottom: 10px;
 }
 
@@ -116,9 +117,9 @@ a{
     color: rgb(49, 49, 49);
     padding: 0px 0px;
     text-align: left;
-    margin-top: 200px;
-    margin-left: 1000px;
-    margin-right: 100px;
+    margin-top: 100px;
+    margin-left: 1200px;
+    margin-right: 150px;
 }
 
 #hero button{
@@ -133,18 +134,19 @@ a{
         height: 500px;
         width: 500px; 
         margin-left: 1200px;
-        margin-top: -700px;
+        margin-top: -450px;
         margin-bottom: -100px;
     }
 
 #tecnologias{
     background-color: rgb(204, 204, 204);
-    color: white;
+    color: rgb(255, 255, 255);
+    background-image: url(img/fondo-body.jpg);
     text-align: center;
 }
 
 #tecnologias .container2{
-    padding: 200px 12px;
+    padding: 100px 12px;
 }
 
 #tecnologias h2{
@@ -161,25 +163,20 @@ a{
 }
 
 #tecnologias .fotos{
-    background-image:url("logos/Microsoft-Visual-Studio-logo.png");
-    height: 180px;
-    width: 440px;
-}
-
-#tecnologias .fotos2{
-    background-image:url("logos/linux-logo.png");
-    height: 180px;
-    width: 440px;
+    background-image:url("logos/icon-lenguage.png");
+    height: 351px;
+    width: 860px;
 }
 
 #mis-proyectos{
     background-color: rgb(204, 204, 204);
     color: rgb(204, 204, 204);
+    background-image: url(img/fondo-body.jpg);
     text-align: center;
 }
 
 #mis-proyectos .container2{
-    padding: 200px 12px;
+    padding: 100px 12px;
 }
 
 #mis-proyectos .carta{
@@ -190,11 +187,15 @@ a{
     border-radius: 15px;
 }
 
-#mis-proyectos .ejemplos-proyectos{
-    background-image:url("proyectos/DragonballZ.PNG");
-    height: 905px;
-    width: 1280px;
+#mis-proyectos img {
+        width: 240px;
+        height: auto;
 }
+
+#mis-proyectos p{
+    color: rgb(49, 49, 49);
+}
+
 
 #contactos button{
     font-size: 5vw;
@@ -314,7 +315,7 @@ footer .container{
     #contactos h3{
         font-size: 3em;
         text-align: center;
-        margin-bottom: 100px;
+        margin-bottom: 140px;
         color: white;
 
     }
@@ -340,8 +341,9 @@ footer .container{
 
     #contactos{
         background-image: url("img/imagen-final.png");
-        height: 500px;
+        height: 600px;
         width: 1903px; 
+        margin-top: -100px;
 }
 
 @media (min-width: 1200px) {
